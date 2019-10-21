@@ -3,6 +3,14 @@ empress-blog-sams-empress-template-template
 
 [Short description of the addon.]
 
+Usage
+------------------------------------------------------------------------------
+
+* Clone the repo
+* Run npm install or yarn install (recommend npm)
+* Run npm start
+* To build, npm run build -- -prod
+
 
 Compatibility
 ------------------------------------------------------------------------------
@@ -11,19 +19,6 @@ Compatibility
 * Ember CLI v2.13 or above
 * Node.js v8 or above
 
-
-Installation
-------------------------------------------------------------------------------
-
-```
-ember install empress-blog-sams-empress-template-template
-```
-
-
-Usage
-------------------------------------------------------------------------------
-
-[Longer description of how to use the addon in apps.]
 
 
 Contributing
