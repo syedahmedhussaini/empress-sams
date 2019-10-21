@@ -1,0 +1,15 @@
+{{!--
+Re-usable card for linking to posts
+--}}
+
+
+{{#link-to 'post' @post.id class="tw-px-3 tw-my-3 tw-w-full lg:tw-w-1/4"}}
+  <article class="service-card tw-bg-white tw-border tw-border-ui-gray-40 tw-overflow-hidden tw-shadow hover:tw-shadow-md">
+    <img class="tw-w-full" src={{post.image}} alt="Sunset in the mountains">
+    <div class="tw-px-6 tw-py-3 tw-leading-tight">
+      {{ui-text bold=true text=@post.title}}
+      <br>
+      {{ui-text textSize="sm" text="Learn more" textColor="interactive-100"}}
+    </div>
+  </article>
+{{/link-to}}

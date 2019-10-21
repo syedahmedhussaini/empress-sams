@@ -1,0 +1,25 @@
+{{!-- Navigation --}}
+{{#if (route-is "index")}}
+    {{#if blog.description}}
+    <header class="page-head">
+        <h2 class="page-head-title">{{blog.description}}</h2>
+    </header>
+    {{/if}}
+{{/if}}
+
+<div class='tw-bg-interactive-40'>
+  
+  {{!-- Service list --}}
+
+  <section class="tw-container tw-mx-auto">
+    <div class="tw-flex tw-flex-row tw-flex-wrap tw-container tw--mx-3">
+      {{#each (sort-by 'date:desc' model) as |post index|}}
+
+      <ServiceCard @post={{post}} @index={{index}}/>
+
+      {{/each}}
+    </div>
+  </section>
+
+
+</div>
